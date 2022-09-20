@@ -1,2 +1,2 @@
-#ZauEsteticas-API
-API desenvolvida voltada a gerencia profissionais da beleza, clientes, agendamentos de uma clínica procedimentos estéticos!  
+#WayOfTheWeights-API
+API em desenvolvimento ainda, mas sistema tem o intuito de gestionar as quantidade de pesos que alcançado na academia pelo usuário
