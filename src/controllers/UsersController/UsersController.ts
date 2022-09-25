@@ -1,31 +1,28 @@
 import { Request, Response } from "express";
-import UserModel from "../model/schemas/UserModel";
-import MessageReturns from "./services/MessageReturns";
+import UserModel from "../../model/schemas/UserModel";
+import MessageReturns from "../services/MessageReturns";
 
-import CreateDataService from "./services/Create";
-import ListOneDataService from "./services/ListOne";
-import ListAllService from "./services/ListAll";
-import DeleteDataService from "./services/Delete";
-import EditDataService from "./services/Edit";
+import CreateDataService from "../services/Create";
+import ListOneDataService from "../services/ListOne";
+import ListAllService from "../services/ListAll";
+import DeleteDataService from "../services/Delete";
+import EditDataService from "../services/Edit";
 
 class UsersControlllers {
   public async create(req: Request, res: Response) {
     try {
-      const { newUserName } = req.body;
-      const userFound = await ListOneDataService.execulte(
-        UserModel,
-        newUserName
-      );
-      if (userFound) {
-        return res
-          .status(400)
-          .json(new MessageReturns(false, "User already exists"));
-      }
+
+      type UserType = {
+        name?: string;
+        userName?: string;
+        password?: string;
+        telefone?: string;
+        email?: string;
+      };
+
 
       await CreateDataService.execulte(UserModel, req.body);
-      res
-        .status(200)
-        .json(new MessageReturns(true, "User create with success"));
+      res.json(new MessageReturns(true, 'Insert with success'));
     } catch (error) {
       res.status(400).send(error);
       console.error(error);
@@ -63,7 +60,9 @@ class UsersControlllers {
       });
 
       if (!userFound) {
-        return res.status(400).json(new MessageReturns(false, 'User not exists'))
+        return res
+          .status(400)
+          .json(new MessageReturns(false, "User not exists"));
       }
       res.status(200).json(userFound);
     } catch (error) {

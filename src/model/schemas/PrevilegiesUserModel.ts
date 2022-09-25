@@ -1,7 +1,7 @@
 import {  DataTypes } from "sequelize";
 import { db } from "../database";
 
-const WeightModel = db.define('weights',
+const PrevilegiesUsersModel = db.define('previlegies_users',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -9,19 +9,24 @@ const WeightModel = db.define('weights',
       allowNull: false,
       primaryKey: true,
     },
-    weight: {
-      type: DataTypes.DECIMAL(8,3),
+    description: {
+      type: DataTypes.STRING(30),
       allowNull: false,
       validate:{
         notEmpty:true
       }
-    }
+    },
+    force: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue:1,
+    },
   },
   {
-    timestamps:false,
     freezeTableName:true,
-    tableName:'weights'
+    tableName:'previlegies_users',
+    timestamps:false
   }
 );
 
-export default WeightModel;
+export default PrevilegiesUsersModel;

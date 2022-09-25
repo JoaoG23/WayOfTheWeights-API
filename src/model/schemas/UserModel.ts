@@ -1,6 +1,8 @@
 import {  DataTypes } from "sequelize";
 import { db } from "../database";
 
+
+
 const UserModel = db.define('users',
   {
     id: {
@@ -30,12 +32,32 @@ const UserModel = db.define('users',
       validate:{
         notEmpty: true
       } 
-    }
-
+    },
+    telefone: {
+      type: DataTypes.STRING(20),
+      allowNull: false,
+      unique: true
+    },
+    email: {
+      type: DataTypes.STRING(70),
+      allowNull: false,
+      unique: true
+    },
+    idPrevilegies:{
+      allowNull:false,
+      type:DataTypes.INTEGER,
+      defaultValue:1,
+      references:{
+        model:'previlegies_users',
+        key:'id'
+      }
+    },
   },
+  
   {
+    timestamps:false,
     freezeTableName:true,
-    tableName:'users'
+    tableName:'users',
   }
 );
 

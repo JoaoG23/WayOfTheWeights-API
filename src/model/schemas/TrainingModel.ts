@@ -11,9 +11,7 @@ const TrainingModel = db.define('trainings',
     },
     descricao: {
       type: DataTypes.STRING(70),
-      autoIncrement: true,
       allowNull: false,
-      primaryKey: true,
       validate:{
         notEmpty:true
       }
@@ -28,6 +26,7 @@ const TrainingModel = db.define('trainings',
     }
   },
   {
+    timestamps:false,
     freezeTableName:true,
     tableName:'trainings'
   }

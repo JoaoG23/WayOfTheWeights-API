@@ -1,7 +1,7 @@
 import {  DataTypes } from "sequelize";
 import { db } from "../database";
 
-const ExercicesModel = db.define('trainings',
+const ExercicesModel = db.define('exercices',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,19 +11,9 @@ const ExercicesModel = db.define('trainings',
     },
     description: {
       type: DataTypes.STRING(70),
-      autoIncrement: true,
       allowNull: false,
-      primaryKey: true,
       validate:{
         notEmpty:true
-      }
-    },
-    userId:{
-      allowNull:false,
-      type:DataTypes.INTEGER,
-      references:{
-        model:'users',
-        key:'id'
       }
     },
     weightId:{
@@ -45,7 +35,8 @@ const ExercicesModel = db.define('trainings',
   },
   {
     freezeTableName:true,
-    tableName:'trainings'
+    tableName:'exercices',
+    timestamps:false
   }
 );
 

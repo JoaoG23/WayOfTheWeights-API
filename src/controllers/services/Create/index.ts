@@ -1,4 +1,3 @@
-import MessageReturns from "../MessageReturns";
 
 class CreateDataService {
 
