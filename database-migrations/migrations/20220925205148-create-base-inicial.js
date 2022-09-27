@@ -55,7 +55,7 @@ module.exports = {
               notEmpty: true
             }
           },
-          telefone: {
+          phonenumber: {
             type: Sequelize.DataTypes.STRING(20),
             allowNull: false,
             unique: true

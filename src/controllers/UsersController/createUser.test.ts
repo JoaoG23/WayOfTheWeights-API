@@ -10,7 +10,7 @@ import { angela, gabiroba, zelanbida } from "../userForTest";
 // 2 - Quando eu fazer algo! When send any
 // 3 - O que deveria fazer? should be
 describe("Create Users", () => {
-  describe("When send datas as username, name, password,telefone, email ", () => {
+  describe("When send datas as username, name, password,phonenumber, email ", () => {
     afterEach(() => {
       TruncateAll.execulte(UserModel);
     });
@@ -24,6 +24,7 @@ describe("Create Users", () => {
       expect(res.statusCode).toEqual(200);
       expect(res.headers);
       expect(res.body).toHaveProperty("msg");
+      expect(res.body.msg).toBe('User inserted with success');
     });
   });
 });

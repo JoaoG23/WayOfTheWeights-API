@@ -1,8 +1,8 @@
 import { Router } from "express";
+const routers = Router();
 
 import usersRouters from './userRouters';
 import loginRouters from './sessionRouters';
-const routers = Router();
 import auth from '../routers/Auth';
 
 

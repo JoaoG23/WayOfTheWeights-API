@@ -33,7 +33,7 @@ const UserModel = db.define('users',
         notEmpty: true
       } 
     },
-    telefone: {
+    phonenumber: {
       type: DataTypes.STRING(20),
       allowNull: false,
       unique: true

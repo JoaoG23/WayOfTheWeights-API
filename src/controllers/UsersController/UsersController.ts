@@ -1,7 +1,11 @@
+import jwt from 'jsonwebtoken';
+import bcrypt from 'bcryptjs';
 import { Request, Response } from "express";
 import UserModel from "../../model/schemas/UserModel";
-import MessageReturns from "../services/MessageReturns";
 
+import { User } from './Intefaces/User';
+// Services 
+import MessageReturns from "../services/MessageReturns";
 import CreateDataService from "../services/Create";
 import ListOneDataService from "../services/ListOne";
 import ListAllService from "../services/ListAll";
@@ -12,17 +16,17 @@ class UsersControlllers {
   public async create(req: Request, res: Response) {
     try {
 
-      type UserType = {
-        name?: string;
-        userName?: string;
-        password?: string;
-        telefone?: string;
-        email?: string;
+      const dataNewUser:User = {
+        name: req.body.name,
+        userName: req.body.userName,
+        password: bcrypt.hashSync(req.body.password),
+        phonenumber: req.body.phonenumber,
+        email: req.body.email,
       };
 
 
-      await CreateDataService.execulte(UserModel, req.body);
-      res.json(new MessageReturns(true, 'Insert with success'));
+      await CreateDataService.execulte(UserModel, dataNewUser);
+      res.json(new MessageReturns(true, 'User inserted with success'));
     } catch (error) {
       res.status(400).send(error);
       console.error(error);
@@ -38,6 +42,8 @@ class UsersControlllers {
       console.error(error);
     }
   }
+
+  
 
   public async listOneForUserUsername(req: Request, res: Response) {
     try {
@@ -71,12 +77,72 @@ class UsersControlllers {
     }
   }
 
+
+  public async logar(req: Request, res: Response) {
+    try {
+      const { userName, password } = req.body;
+      const userFound:User = await ListOneDataService.execulte(UserModel, {
+        userName: userName,
+      });
+
+      if (!userFound) {
+        return res
+          .status(400)
+          .json(new MessageReturns(false, "Password or user incorrect"));
+      }
+
+      
+      // Verify user Criptografia
+      const passwordEPasswordDatabaseMatch = bcrypt.compareSync(
+        password,
+        userFound.password
+      );
+
+
+      if (!passwordEPasswordDatabaseMatch) {
+        res.status(400).json(new MessageReturns(false, "Password or user incorrect"));
+        return;
+      }
+
+      // Get Token
+      const token = jwt.sign(
+        {
+          id: userFound.id,
+          admin: userFound.idPrevilegies,
+        },
+        process.env.TOKEN_SECRET,
+        { expiresIn: 4000 }
+      );
+
+
+      // insert token in code
+      res.header("authorization-token", token);
+      res
+        .status(200)
+        .json({
+          userFound,
+          situation: true,
+          msg: "User logged in success",
+          tokenUser: token,
+        });
+
+    } catch (error) {
+      res.send(error);
+      console.error(error);
+    }
+  }
+
   public async deleteUserForId(req: Request, res: Response) {
     try {
-      const { id } = req.params;
+
+      let idFound = req.params.id;
+      if (!idFound) {
+        idFound = req.body.id;
+      }
+
 
       const userFound = await ListOneDataService.execulte(UserModel, {
-        id: id,
+        id: idFound,
       });
       if (!userFound) {
         return res
@@ -87,7 +153,7 @@ class UsersControlllers {
       }
 
       await DeleteDataService.execulte(UserModel, {
-        id: id,
+        id: idFound,
       });
       res
         .status(200)
@@ -98,23 +164,38 @@ class UsersControlllers {
     }
   }
 
-  public async updateUserForUserName(req: Request, res: Response) {
+  public async updateUserForId(req: Request, res: Response) {
     try {
-      const { id } = req.body;
+
+      let idFound = req.params.id;
+      if (!idFound) {
+        idFound = req.body.id;
+      }
+
       const userFound = await ListOneDataService.execulte(UserModel, {
-        id: id,
+        id: idFound,
       });
 
       if (!userFound) {
         return res
           .status(400)
           .json(
-            new MessageReturns(false, "User not exists for he to be updated")
+            new MessageReturns(false, "User not exists for updated")
           );
       }
 
-      await EditDataService.execulte(UserModel, req.body, {
-        id: id,
+      const newData:User = {
+        name: req.body.name,
+        userName: req.body.userName,
+        password: bcrypt.hashSync(req.body.password),
+        phonenumber: req.body.phonenumber,
+        email: req.body.email
+      };
+
+
+
+      await EditDataService.execulte(UserModel, newData, {
+        id: idFound,
       });
 
       res

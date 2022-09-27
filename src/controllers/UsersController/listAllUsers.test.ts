@@ -39,7 +39,7 @@ describe("List Users", () => {
 
     it("Should to find one user registed and to show your datas", async () => {
       // Create on new list of users
-      const first = await request(app).post("/api/users").send(angela);
+      const first = await request(app).post("/api/users").send(gabiroba);
 
       const res = await request(app).get("/api/users/1");
       console.info(res.body);

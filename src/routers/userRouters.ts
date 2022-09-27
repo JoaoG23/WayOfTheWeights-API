@@ -7,8 +7,10 @@ routers.get("/:id", UsersController.listOneForId);
 routers.get("/username/:userName", UsersController.listOneForUserUsername);
 
 routers.delete("/:id", UsersController.deleteUserForId);
+routers.delete("/", UsersController.deleteUserForId);
 
-routers.put("/", UsersController.updateUserForUserName);
+routers.put("/:id", UsersController.updateUserForId);
+routers.put("/", UsersController.updateUserForId);
 
 routers.post("/", UsersController.create);
 
