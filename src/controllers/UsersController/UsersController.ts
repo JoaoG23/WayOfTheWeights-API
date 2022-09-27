@@ -26,7 +26,7 @@ class UsersControlllers {
 
 
       await CreateDataService.execulte(UserModel, dataNewUser);
-      res.json(new MessageReturns(true, 'User inserted with success'));
+      res.status(201).json(new MessageReturns(true, 'User inserted with success'));
     } catch (error) {
       res.status(400).send(error);
       console.error(error);
@@ -108,19 +108,25 @@ class UsersControlllers {
       const token = jwt.sign(
         {
           id: userFound.id,
-          admin: userFound.idPrevilegies,
+          idPrevilegies: userFound.idPrevilegies,
         },
         process.env.TOKEN_SECRET,
-        { expiresIn: 4000 }
+        { expiresIn: 3000 }
       );
+    
 
+      const DataShowUserLogin:User = {
+        id:userFound.id,
+        name:userFound.name,
+        idPrevilegies:userFound.idPrevilegies
+      }
 
       // insert token in code
       res.header("authorization-token", token);
       res
         .status(200)
         .json({
-          userFound,
+          userData:DataShowUserLogin,
           situation: true,
           msg: "User logged in success",
           tokenUser: token,

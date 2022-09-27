@@ -5,6 +5,10 @@ export const angela = {
   phonenumber:'(31) 99999-000',
   email:'ajuda@test.com'
 };
+export const angelaLogin = {
+  userName: "angela",
+  password: "angela",
+};
 export const angelaWithId = {
     id:1,
   name: "Angela Ramos",
