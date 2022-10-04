@@ -10,7 +10,7 @@ const WeightModel = db.define('weights',
       primaryKey: true,
     },
     weight: {
-      type: DataTypes.DECIMAL(8,3),
+      type: DataTypes.INTEGER,
       allowNull: false,
       validate:{
         notEmpty:true

@@ -1,15 +1,17 @@
 import { Router } from "express";
-import UsersController from "../controllers/UsersController/UsersController";
+import TrainingController from "../controllers/TrainingController";
 const routers = Router();
 
-routers.get("/", UsersController.listAll);
-// routers.get("/:id", UsersController.listOneForId);
-// routers.get("/username/:userName", UsersController.listOneForUserUsername);
+routers.get("/", TrainingController.listAll);
+routers.get("/:id", TrainingController.listOneForId);
 
-// routers.delete("/:id", UsersController.deleteUserForId);
+routers.delete("/:id", TrainingController.deleteForId);
+routers.delete("/", TrainingController.deleteForId);
 
-// routers.put("/", UsersController.updateUserForUserName);
+routers.put("/:id", TrainingController.updateForId);
+routers.put("/", TrainingController.updateForId);
+routers.get("/user/:idUser", TrainingController.listAllForIdUser);
 
-// routers.post("/", UsersController.create);
+routers.post("/", TrainingController.create);
 
 export default routers;

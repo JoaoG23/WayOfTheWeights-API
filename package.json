@@ -6,9 +6,9 @@
   "scripts": {
     "prod": "node dist/server.js",
     "build": "tsc",
-    "test": "vitest",
-    "dev": "npx nodemon --exec ts-node --files src/server.ts",
-    "start": "ts-node ./src/server.ts"
+    "test": "NODE_ENV=test vitest",
+    "dev": "NODE_ENV=dev npx nodemon --exec ts-node --files src/server.ts",
+    "start": "NODE_ENV=prod ts-node ./src/server.ts"
   },
   "keywords": [],
   "author": "",

@@ -8,8 +8,15 @@ const TrainingModel = db.define('trainings',
       autoIncrement: true,
       allowNull: false,
       primaryKey: true,
-    },
-    descricao: {
+      },
+      title: {
+        type: DataTypes.STRING(70),
+        allowNull: false,
+        validate: {
+          notEmpty: true
+        }
+      },
+      description: {
       type: DataTypes.STRING(70),
       allowNull: false,
       validate:{

@@ -12,14 +12,14 @@ const UserModel = db.define('users',
       primaryKey: true,
     },
     name: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING(70),
       allowNull: false,
       validate:{
         notEmpty: true
       } 
     },
     userName: {
-      type: DataTypes.STRING(100),
+      type: DataTypes.STRING(70),
       allowNull: false,
       unique: true,
       validate: {

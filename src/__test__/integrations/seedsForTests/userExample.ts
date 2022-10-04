@@ -9,6 +9,9 @@ export const angelaLogin = {
   userName: "angela",
   password: "angela",
 };
+export const emailAngela = {
+  email: "joaoguilherme94@live.com",
+};
 export const angelaWithId = {
     id:1,
   name: "Angela Ramos",

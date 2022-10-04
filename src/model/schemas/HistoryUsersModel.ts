@@ -14,7 +14,7 @@ const HistoryUsersModel = db.define('historyusers',
       allowNull: false
     },
     name_user: {
-      type: DataTypes.STRING(70),
+      type: DataTypes.STRING(45),
       allowNull: false
     },
     id_training: {
@@ -22,7 +22,7 @@ const HistoryUsersModel = db.define('historyusers',
       allowNull: false
     },
     training_name: {
-      type: DataTypes.STRING(70),
+      type: DataTypes.STRING(45),
       allowNull: false
     },
     id_exercice: {
@@ -30,7 +30,7 @@ const HistoryUsersModel = db.define('historyusers',
       allowNull: false
     },
     exercice_name: {
-      type: DataTypes.STRING(70),
+      type: DataTypes.STRING(45),
       allowNull: false
     },
     id_pound: {
@@ -38,9 +38,13 @@ const HistoryUsersModel = db.define('historyusers',
       allowNull: false
     },
     pound: {
-      type: DataTypes.DECIMAL(8,3),
+      type: DataTypes.INTEGER,
       allowNull: false
     },
+    dateInsert: {
+      type: DataTypes.DATE,
+      allowNull: false
+    }
   },
   {
     freezeTableName:true,

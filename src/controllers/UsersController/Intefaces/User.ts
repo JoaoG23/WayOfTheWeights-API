@@ -4,6 +4,19 @@ export interface User {
     userName?: string;
     password?: string;
     phonenumber?: string;
-    email?: string;
     idPrevilegies?:number;
+    email?: string;
+    userData?:{
+      id?:number;
+      name?:string;
+      force?:number;
+    }
   };
+
+  export interface UserForce {
+    userData?:{
+      id?:number;
+      name?:string;
+      force?:number;
+    }
+  }

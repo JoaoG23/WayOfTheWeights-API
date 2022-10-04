@@ -67,7 +67,7 @@ ALTER TABLE exercices ADD CONSTRAINT "exercices_fk1" FOREIGN KEY ("id_training")
 SELECT * FROM privilege_of_user;
 SELECT * FROM users;
 
-SELECT * FROM users RIGHT JOIN privilege_of_user on privilege_of_user.id = users.id_previlegio;
+SELECT * FROM users RIGHT JOIN privilege_user on privilege_of_user.id = users.id_previlegio;
 
 SELECT * FROM users JOIN training on users.id = training.id_user left join exercices on training.id = exercices.id_training
 Left join weights on weights.id = exercices.id_weights;

@@ -92,7 +92,7 @@ module.exports = {
                 notEmpty: true
               }
             },
-            descricao: {
+            description: {
               type: Sequelize.DataTypes.STRING(70),
               allowNull: false,
               defaultValue: ''
@@ -120,7 +120,7 @@ module.exports = {
               primaryKey: true,
             },
             weight: {
-              type: Sequelize.DataTypes.DECIMAL(8, 3),
+              type: Sequelize.DataTypes.INTEGER,
               allowNull: false,
               validate: {
                 notEmpty: true
@@ -199,11 +199,15 @@ module.exports = {
               allowNull: false
             },
             pound: {
-              type: Sequelize.DataTypes.DECIMAL(8, 3),
+              type: Sequelize.DataTypes.INTEGER,
+              allowNull: false
+            },
+            dateInsert: {
+              type: Sequelize.DataTypes.DATE,
               allowNull: false
             },
           })
-      ]);
+        ]);
     });
 
   },
@@ -217,8 +221,7 @@ module.exports = {
         queryInterface.dropTable('weights', { force: true }),
         queryInterface.dropTable('exercices', { force: true }),
         queryInterface.dropTable('history_users'),
-        queryInterface.dropTable('users',{ force: true }),
-
+        queryInterface.dropTable('users',{ force: true })
       ]);
     });
   }
