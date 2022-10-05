@@ -14,8 +14,8 @@ class StatisticsControlllers {
 
   public async listAll(req: Request, res: Response) {
     try {
-      const trainings = await ListAllService.execulte(HistoryUsersModel);
-      res.status(200).json(trainings);
+      const history = await ListAllService.execulte(HistoryUsersModel);
+      res.status(200).json(history);
     } catch (error) {
       res.status(400).json(error);
       console.error(error);

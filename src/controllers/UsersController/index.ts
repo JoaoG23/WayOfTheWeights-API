@@ -1,11 +1,8 @@
-import { db } from "../../model/database";
-import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import { Request, Response } from "express";
 import UserModel from "../../model/schemas/UserModel";
-import PrevilegiesUsersModel from "../../model/schemas/PrevilegiesUserModel";
 
-import { User } from "./Intefaces/User";
+import { User } from "../../types/User";
 // Services
 import MessageReturns from "../services/MessageReturns";
 import CreateDataService from "../services/Create";
@@ -19,8 +16,6 @@ import GenerateToken from "../services/GenerateToken";
 class UsersControlllers {
   public async create(req: Request, res: Response) {
     try {
-
-
       const phonenumberFound = await ListOneDataService.execulte(UserModel, {
         phonenumber: req.body.phonenumber,
       });
@@ -41,7 +36,6 @@ class UsersControlllers {
           .json(new MessageReturns(false, "This Email already exists"));
       }
 
-
       const dataNewUser: User = {
         name: req.body.name,
         userName: req.body.userName,
@@ -56,7 +50,7 @@ class UsersControlllers {
         .status(201)
         .json(new MessageReturns(true, "User inserted with success"));
     } catch (error) {
-      res.status(400).send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
@@ -66,16 +60,16 @@ class UsersControlllers {
       const users = await ListAllService.execulte(UserModel);
       res.status(200).json(users);
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
 
   public async teste(req: Request, res: Response) {
     try {
-
     } catch (error) {
       res.send(error);
+      
       console.error(error);
     }
   }
@@ -88,7 +82,7 @@ class UsersControlllers {
       });
       res.status(200).json(userFound);
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
@@ -107,7 +101,7 @@ class UsersControlllers {
       }
       res.status(200).json(userFound);
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
@@ -131,10 +125,9 @@ class UsersControlllers {
       );
 
       if (!passwordEPasswordDatabaseMatch) {
-        res
+        return res
           .status(400)
           .json(new MessageReturns(false, "Password or user incorrect"));
-        return;
       }
 
       const token: any = await GenerateToken.execulte({
@@ -144,7 +137,7 @@ class UsersControlllers {
 
       const DataShowUserLogin: User = {
         id: userFound.id,
-        name: userFound.name
+        name: userFound.name,
       };
 
       // insert token in code
@@ -156,7 +149,7 @@ class UsersControlllers {
         tokenUser: token,
       });
     } catch (error) {
-      res.send(error);
+      res.status(404).json(new MessageReturns(false, 'User not exists or there is one error'));
       console.error(error);
     }
   }
@@ -186,7 +179,7 @@ class UsersControlllers {
         .status(200)
         .json(new MessageReturns(true, "User deleted with success"));
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
@@ -224,29 +217,43 @@ class UsersControlllers {
         .status(200)
         .json(new MessageReturns(true, "User updated with success"));
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }
+
+
+  
   public async forgetPassword(req: Request, res: Response) {
     try {
-        const emailFound = req.body.email;
+      const { email, password }:User = req.body;
 
       const userFound = await ListOneDataService.execulte(UserModel, {
-        email: emailFound,
+        email: email,
       });
 
       if (!userFound) {
         return res
           .status(400)
-          .json(new MessageReturns(false,"Email don't exists of system"));
+          .json(new MessageReturns(false, "Email don't exists of system"));
       }
+      
+      await EditDataService.execulte(UserModel, {
+        password:bcrypt.hashSync(password)
+      }, {
+        email:email
+      });
 
       res
         .status(200)
-        .json(new MessageReturns(true, "In the moment was send one e-mail! Look your inbox! Please"));
+        .json(
+          new MessageReturns(
+            true,
+            "Password change with success! Try to login, Please!"
+          )
+        );
     } catch (error) {
-      res.send(error);
+      res.status(400).send(new MessageReturns(false, 'There is error operation with user'));
       console.error(error);
     }
   }

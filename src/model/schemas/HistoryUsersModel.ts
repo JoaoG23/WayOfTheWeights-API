@@ -1,7 +1,9 @@
 import {  DataTypes } from "sequelize";
 import { db } from "../database";
 
-const HistoryUsersModel = db.define('historyusers',
+
+
+const HistoryUsersModel = db.define('history_users',
   {
     id: {
       type: DataTypes.INTEGER,
@@ -47,8 +49,9 @@ const HistoryUsersModel = db.define('historyusers',
     }
   },
   {
+    timestamps:false,
     freezeTableName:true,
-    tableName:'historyusers'
+    tableName:'history_users'
   }
 );
 

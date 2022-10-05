@@ -3,14 +3,15 @@ export const angela = {
   userName: "angela",
   password: "angela",
   phonenumber:'(31) 99999-000',
-  email:'ajuda@test.com'
+  email:'angela@email.com'
 };
 export const angelaLogin = {
   userName: "angela",
   password: "angela",
 };
-export const emailAngela = {
-  email: "joaoguilherme94@live.com",
+export const emailAngelaAndNewPassword = {
+  password: "nelza",
+  email: "angela@email.com",
 };
 export const angelaWithId = {
     id:1,

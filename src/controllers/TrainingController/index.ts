@@ -9,7 +9,7 @@ import ListAllService from "../services/ListAll";
 import DeleteDataService from "../services/Delete";
 import EditDataService from "../services/Edit";
 import ListAllByCriteriaService from "../services/ListAllByCriteria";
-import { Training } from "./Intefaces/Training";
+import { Training } from "../../types/Training";
 
 class TrainingsControlllers {
   public async create(req: Request, res: Response) {

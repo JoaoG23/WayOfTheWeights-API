@@ -13,6 +13,7 @@ routers.delete("/", UsersController.deleteUserForId);
 routers.put("/:id", UsersController.updateUserForId);
 routers.put("/", UsersController.updateUserForId);
 
+
 routers.post("/", UsersController.create);
 
 export default routers;

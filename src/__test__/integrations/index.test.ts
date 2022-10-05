@@ -14,6 +14,7 @@ import {
   angelaLogin,
   angelaWithId,
   emailAngela,
+  emailAngelaAndNewPassword,
   gabiroba,
   zelanbida,
 } from "./seedsForTests/userExample";
@@ -231,8 +232,8 @@ describe("Login User", () => {
       expect(loginAngela.body.msg).toBe("User logged in success");
     });
   });
-  describe("When the user created to do login ", () => {
-    afterEach(() => {
+  describe("When user not created to do login ", () => {
+    beforeEach(() => {
       TruncateAll.execulte(UserModel);
     });
 
@@ -243,36 +244,37 @@ describe("Login User", () => {
         .set("authorization-token", token)
         .send(angelaLogin);
 
-      expect(loginAngela.statusCode).toEqual(400);
+      expect(loginAngela.statusCode).toEqual(404);
       expect(loginAngela.headers);
+      console.log(loginAngela.body);
       expect(loginAngela.body).toHaveProperty("msg");
-      expect(loginAngela.body.msg).toBe("Password or user incorrect");
+      // expect(loginAngela.body.msg).toBe("Password or user incorrect");
     });
   });
-  // describe("When the user change your password  ", () => {
-  //   afterEach(() => {
-  //     TruncateAll.execulte(UserModel);
-  //   });
+  describe("When the user change your password  ", () => {
+    afterEach(() => {
+      TruncateAll.execulte(UserModel);
+    });
 
-  //   it("Should get status 400 don't to do login user not exists", async () => {
-  //     const token = await GenerateToken.execulte({ id: 1, previlegie: 2 });
+    it("Should user to able in the change your password", async () => {
+      const token = await GenerateToken.execulte({ id: 1, previlegie: 2 });
 
-  //     const registerAngela = await request(app)
-  //       .post("/api/auth/register")
-  //       .set("authorization-token", token)
-  //       .send(angela);
+      const registerAngela = await request(app)
+        .post("/api/auth/register")
+        .set("authorization-token", token)
+        .send(angela);
 
-  //     const loginAngela = await request(app)
-  //       .post("/api/auth/forgetpassword")
-  //       .set("authorization-token", token)
-  //       .send(emailAngela);
+      const changedPassword = await request(app)
+        .put("/api/auth/forgetpassword")
+        .set("authorization-token", token)
+        .send(emailAngelaAndNewPassword);
 
-  //     expect(loginAngela.statusCode).toEqual(400);
-  //     expect(loginAngela.headers);
-  //     expect(loginAngela.body).toHaveProperty("msg");
-  //     expect(loginAngela.body.msg).toBe("Password or user incorrect");
-  //   });
-  // });
+      expect(changedPassword.statusCode).toEqual(200);
+      expect(changedPassword.headers);
+      expect(changedPassword.body).toHaveProperty("msg");
+      // expect(changedPassword.body.msg).toBe("Password or user incorrect");
+    });
+  });
 });
 
 describe("Trainings Of Users", () => {
@@ -712,7 +714,7 @@ describe("Exercices Of Users", () => {
 });
 
 describe('Data and Statitics', () => {
-  describe("When to create one new exercices, insert he in the history METHOD = GET in the router /api/statistic/history/", () => {
+  describe("When to create one new exercices, insert he in the history METHOD = GET in the router /api/statistic/", () => {
     afterEach(() => {
       TruncateAll.execulte(UserModel);
     });
@@ -737,16 +739,15 @@ describe('Data and Statitics', () => {
         .set("authorization-token", token)
         .send(legPressExercice);
 
-      // const updateOneExercice = await request(app)
-      //   .put("/api/exercice/1")
-      //   .set("authorization-token", token)
-      //   .send(agachamentoExercice);
+      const updateOneExercice = await request(app)
+        .put("/api/exercice/1")
+        .set("authorization-token", token)
+        .send(agachamentoExercice);
 
       const showTableHistory = await request(app)
         .get("/api/statistics/")
         .set("authorization-token", token)
 
-        console.log(showTableHistory.body)
 
       expect(showTableHistory.statusCode).toEqual(200);
       expect(showTableHistory.headers);

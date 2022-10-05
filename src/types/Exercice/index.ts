@@ -1,6 +1,7 @@
 export interface Exercice {
   id?: number;
   description?: string;
-  weightId: number;
+  weightId?: number;
+  weight?: number;
   trainingId?: number;
 }
