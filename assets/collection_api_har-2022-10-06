@@ -1,0 +1,2572 @@
+{
+	"log": {
+		"version": "1.2",
+		"creator": {
+			"name": "Insomnia REST Client",
+			"version": "insomnia.desktop.app:v2022.6.0"
+		},
+		"entries": [
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 131.251,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/users/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":1,\n\t\"name\":\"adminModificado\",\n\t\"userName\":\"adminModificado\",\n\t\"password\":\"adminModificado\",\n\t\"phonenumber\":\"(31) 9999-9999\",\n\t\"email\":\"adminModificado@email.com\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "52"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"34-G20Jlgm5FWVRQyWSNaM+hlFYJCw\""
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 01 Oct 2022 21:24:35 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 52,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User updated with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 131.251,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update User for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 38.871,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/training/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n  \"title\": \"Treino D\",\n  \"description\": \"Treino de cardio\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "56"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"38-YCgfFl7iDXKZK1xkvnKi7OVkyyo\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:35:08 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 56,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"Training updated with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 38.871,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update Training for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 163.158,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/exercice/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"description\": \"Levantamento Terra\",\n\t\"weightId\": 200,\n\t\"trainingId\": 1\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "215"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"d7-wHnR/tzut1fsxJsOeejzsqKKImQ\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 19:33:09 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 215,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":2,\"exercice_name\":\"EXERCICIO ANGUSTIA\",\"id_pound\":200,\"pound\":200,\"dateInsert\":\"2022-10-05T19:33:08.997Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 163.158,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update exercice for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 79.137,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\":\"admin\",\n\t\"userName\":\"admin\",\n\t\"password\":\"admin\",\n\t\"phonenumber\":\"(31) 9999-9999\",\n\t\"email\":\"admin@email.com\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "52"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"34-G20Jlgm5FWVRQyWSNaM+hlFYJCw\""
+						},
+						{
+							"name": "Date",
+							"value": "Sat, 01 Oct 2022 21:22:51 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 52,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User updated with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 79.137,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update User for body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 144.61599999999999,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/training/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":1,\n  \"title\": \"TREINO POLARIOZADO\",\n  \"description\": \"TREINO TESTE\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "56"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"38-YCgfFl7iDXKZK1xkvnKi7OVkyyo\""
+						},
+						{
+							"name": "Date",
+							"value": "Fri, 30 Sep 2022 20:25:57 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 56,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"Training updated with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 144.61599999999999,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update Training for body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 163.19400000000002,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/exercice/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\": 1,\n\t\"description\": \"Agachamento\",\n\t\"weightId\": 90,\n\t\"trainingId\": 1\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "199"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"c7-iakBJ7BvbtAslgZmIB7Wg8EaeQA\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 19:46:17 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 199,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":1,\"exercice_name\":\"NOVO\",\"id_pound\":90,\"pound\":90,\"dateInsert\":\"2022-10-05T19:46:17.381Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 163.19400000000002,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Update exercice for body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 49.808,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":1\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "52"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"34-9uRho1aUlyqt97hVZ1OmwQsT8fA\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 26 Sep 2022 23:54:31 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 52,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User deleted with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 49.808,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete User for Body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/training/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":1\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete Training for Body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 0,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/exercice/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"id\":1\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 0,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete exercice for Body"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 5.029,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/users/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "52"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"34-9uRho1aUlyqt97hVZ1OmwQsT8fA\""
+						},
+						{
+							"name": "Date",
+							"value": "Mon, 26 Sep 2022 23:54:51 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 52,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User deleted with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 5.029,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete User for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 2268.464,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/training/3",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 0,
+					"statusText": "Error",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [],
+					"content": {
+						"size": 0,
+						"mimeType": "",
+						"text": ""
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 2268.464,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete Training for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 6.112,
+				"request": {
+					"method": "DELETE",
+					"url": "http://localhost:3000/api/exercice/9",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 400,
+					"statusText": "Bad Request",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "68"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"44-lXVb6cs5ewsxWlFm72wEYtPOw1g\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 14:12:09 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 68,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":false,\"msg\":\"Exercice not exists for he to be removed\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.112,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Delete exercice for params"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 7.032,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "385"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"181-+lPJ0vFqMiQQFom4CyPpNFF0wRk\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 06 Oct 2022 13:13:31 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 385,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"name\":\"lo\",\"userName\":\"lo\",\"password\":\"$2a$10$1vObIZ.plyYAWCWMvmrwK.TlTm9eldmRG874WE65UyGuigWLTdJBy\",\"phonenumber\":\"(31) 998999-9999\",\"email\":\"lo@admin.com\",\"idPrevilegies\":1},{\"id\":2,\"name\":\"joao\",\"userName\":\"joao\",\"password\":\"$2a$10$ecAqHYwQbWTeXTmMM54hKeqxjBm51H1m5gBOLsST4AtxKyBrbHDDC\",\"phonenumber\":\"(31)99999-9999\",\"email\":\"joaoguilherme94@live.com\",\"idPrevilegies\":1}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 7.032,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List All Users"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 3.895,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/users/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "192"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"c0-8m0pxxyQelv8LEWe8QELXOovV9Y\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:18:27 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 192,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":2,\"name\":\"admin\",\"userName\":\"admin\",\"password\":\"$2a$10$d9T.p3WoF7fREPpz0zrJZeDc.1RwnJ19UUoHrQ9bAPv/DeXnhCDni\",\"phonenumber\":\"(31) 98999-9999\",\"email\":\"admin@admin.com\",\"idPrevilegies\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.895,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List one User for Id"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 40.957,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/training/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "84"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"54-VwL500NthLgVWgxxZCtJ/FNXFok\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 17:46:42 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 84,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":1,\"title\":\"Treino A\",\"description\":\"Treinamento de Parte Inferior\",\"userId\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 40.957,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List one Training for Id"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 117.77600000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/exercice/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "62"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"3e-Z0cFeYjo6kbjilNGb1s9i4XKYws\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 19:35:23 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 62,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":1,\"description\":\"Agachamento\",\"trainingId\":1,\"weight\":4}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 117.77600000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List one exercice for Id"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 37.226,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/exercice/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "404"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"194-om4R1QaNoXJ9qcPcHq9b7NSVTdI\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 19:46:32 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 404,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":10,\"description\":\"Flexão\",\"trainingId\":1,\"weight\":100},{\"id\":11,\"description\":\"Agachamento\",\"trainingId\":1,\"weight\":100},{\"id\":12,\"description\":\"Levantamento Terra\",\"trainingId\":1,\"weight\":100},{\"id\":13,\"description\":\"Levantamento Terra\",\"trainingId\":1,\"weight\":100},{\"id\":2,\"description\":\"EXERCICIO ANGUSTIA\",\"trainingId\":1,\"weight\":200},{\"id\":1,\"description\":\"NOVO\",\"trainingId\":1,\"weight\":90}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 37.226,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List all Exercices"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 6.567,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/statistics/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "1320"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"528-Jk+Uny6rtIXz+Xc9ooiESo01tP8\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 06 Oct 2022 13:13:21 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 1320,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":11,\"exercice_name\":\"Agachamento\",\"id_pound\":100,\"pound\":100,\"dateInsert\":\"2022-10-05T15:27:38.369Z\"},{\"id\":2,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":12,\"exercice_name\":\"Levantamento Terra\",\"id_pound\":100,\"pound\":100,\"dateInsert\":\"2022-10-05T15:27:57.237Z\"},{\"id\":3,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":13,\"exercice_name\":\"Levantamento Terra\",\"id_pound\":100,\"pound\":100,\"dateInsert\":\"2022-10-05T15:27:58.717Z\"},{\"id\":4,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":13,\"exercice_name\":\"Levantamento Terra\",\"id_pound\":100,\"pound\":100,\"dateInsert\":\"2022-10-05T15:56:44.847Z\"},{\"id\":5,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":2,\"exercice_name\":\"EXERCICIO ANGUSTIA\",\"id_pound\":200,\"pound\":200,\"dateInsert\":\"2022-10-05T19:33:08.997Z\"},{\"id\":6,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":1,\"exercice_name\":\"NOVO\",\"id_pound\":90,\"pound\":90,\"dateInsert\":\"2022-10-05T19:46:17.381Z\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.567,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List all History"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 116.06400000000001,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/statistics/lastthree/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "655"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"28f-U/9JO1xNnuqcKxz3VGyEu575p34\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 06 Oct 2022 13:13:16 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 655,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":6,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":1,\"exercice_name\":\"NOVO\",\"id_pound\":90,\"pound\":90,\"dateInsert\":\"2022-10-05T19:46:17.381Z\"},{\"id\":5,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":2,\"exercice_name\":\"EXERCICIO ANGUSTIA\",\"id_pound\":200,\"pound\":200,\"dateInsert\":\"2022-10-05T19:33:08.997Z\"},{\"id\":4,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":13,\"exercice_name\":\"Levantamento Terra\",\"id_pound\":100,\"pound\":100,\"dateInsert\":\"2022-10-05T15:56:44.847Z\"}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 116.06400000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List last 3 exercices"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 6.01,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/statistics/lastexercice/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "206"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"ce-KfUkLG/eIGiePFEIERY+PlROuss\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 06 Oct 2022 13:13:19 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 206,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":6,\"id_user\":1,\"name_user\":\"lo\",\"id_training\":1,\"training_name\":\"Treinamento de Parte Posterior\",\"id_exercice\":1,\"exercice_name\":\"NOVO\",\"id_pound\":90,\"pound\":90,\"dateInsert\":\"2022-10-05T19:46:17.381Z\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 6.01,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List last exercice"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 19.003,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/training/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "414"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"19e-fOaSo/MxCDVr+tbU1vgGCCbY59U\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:35:18 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 414,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"title\":\"Treino C\",\"description\":\"Treinamento de Parte Superior\",\"userId\":1},{\"id\":3,\"title\":\"Treino A\",\"description\":\"Treinamento de Parte Inferior\",\"userId\":1},{\"id\":4,\"title\":\"Treino A\",\"description\":\"Treinamento de Parte Inferior\",\"userId\":2},{\"id\":5,\"title\":\"Treino B\",\"description\":\"Treinamento de Parte Posterior\",\"userId\":2},{\"id\":2,\"title\":\"Treino D\",\"description\":\"Treino de cardio\",\"userId\":1}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 19.003,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List all Trainings"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 39.43,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/users/username/admin",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "192"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"c0-8m0pxxyQelv8LEWe8QELXOovV9Y\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:18:18 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 192,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"id\":2,\"name\":\"admin\",\"userName\":\"admin\",\"password\":\"$2a$10$d9T.p3WoF7fREPpz0zrJZeDc.1RwnJ19UUoHrQ9bAPv/DeXnhCDni\",\"phonenumber\":\"(31) 98999-9999\",\"email\":\"admin@admin.com\",\"idPrevilegies\":1}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 39.43,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List  one for username"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 3.5599999999999996,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/training/user/2",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "172"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"ac-gNugvRZSsp602ReO5ea3ucjX7pQ\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:20:58 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 172,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":4,\"title\":\"Treino A\",\"description\":\"Treinamento de Parte Inferior\",\"userId\":2},{\"id\":5,\"title\":\"Treino B\",\"description\":\"Treinamento de Parte Posterior\",\"userId\":2}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 3.5599999999999996,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List all Training for ID of the User"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 7.791,
+				"request": {
+					"method": "GET",
+					"url": "http://localhost:3000/api/exercice/training/1",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [],
+					"postData": {
+						"mimeType": "",
+						"text": "",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "184"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"b8-jLzVmbnGEseLISsbkWCXZEnY7Q4\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 14:01:28 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 184,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "[{\"id\":1,\"description\":\"Supino\",\"trainingId\":1,\"weight\":50},{\"id\":6,\"description\":\"Flexão\",\"trainingId\":1,\"weight\":100},{\"id\":2,\"description\":\"Cruxifixo\",\"trainingId\":1,\"weight\":100}]"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 7.791,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "List all exercice for ID of the Training"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 119.535,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/api/users/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\":\"amanda\",\n\t\"userName\":\"amanda\",\n\t\"password\":\"amanda\",\n\t\"phonenumber\":\"(31) 9999-9999\",\n\t\"email\":\"amanda@admin.com\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "53"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"35-Rv3rSSFuH3PLTqmCS93dmzjn0HA\""
+						},
+						{
+							"name": "Date",
+							"value": "Tue, 04 Oct 2022 18:02:59 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 53,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User inserted with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 119.535,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create User"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 320.956,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/api/training/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"title\":\"Treino B\",\n\t\"description\":\"Treinamento de Parte Posterior\",\n\t\"userId\":1\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "58"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"3a-D81wsm2EZYOwWwT6rDU0wuwuzNI\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 13:40:08 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 58,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":false,\"msg\":\"Training inserted with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 320.956,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create Training for user"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 15.036000000000001,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/api/exercice/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"description\": \"Levantamento Terra\",\n\t\"weightId\": 100,\n\t\"trainingId\": 1\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "56"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"38-oTlIIvHaa8fcQopFBTR3BIy+EtM\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 15:27:58 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 56,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"Exercice inserted with sucess\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 15.036000000000001,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Create exercice for For Training"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 208.16299999999998,
+				"request": {
+					"method": "PUT",
+					"url": "http://localhost:3000/api/auth/forgetpassword",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"email\":\"joaoguilherme94@live.com\",\n\t\"password\":\"joaodev\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "78"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"4e-OjNDzcbBZSASRzKD6Rc/lPwPynQ\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 20:26:25 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 78,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"Password change with success! Try to login, Please!\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 208.16299999999998,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Forget Password User"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 313.428,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/api/auth/login",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"userName\":\"joao\",\n\t\"password\":\"joaodev\"\n}\n",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 200,
+					"statusText": "OK",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "authorization-token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "235"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"eb-vVZol83M5JHuTct7apIXtYM5Kik\""
+						},
+						{
+							"name": "Date",
+							"value": "Thu, 06 Oct 2022 13:10:30 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 235,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"userData\":{\"id\":1,\"name\":\"joao\"},\"situation\":true,\"msg\":\"User logged in success\",\"tokenUser\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjY1MDYxODMwLCJleHAiOjE2NjUwNjU0MzB9.aXUzCijvsGunKAmLdnY4A9LbBCMKF6PzOzMZwb2Qlis\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 313.428,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Login"
+			},
+			{
+				"startedDateTime": "2022-10-06T17:08:42.324Z",
+				"time": 346.507,
+				"request": {
+					"method": "POST",
+					"url": "http://localhost:3000/api/auth/register/",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"queryString": [
+						{
+							"name": "",
+							"value": ""
+						}
+					],
+					"postData": {
+						"mimeType": "application/json",
+						"text": "{\n\t\"name\":\"joao\",\n\t\"userName\":\"joao\",\n\t\"password\":\"joao\",\n\t\"phonenumber\":\"(31)99999-9999\",\n\t\"email\":\"joaoguilherme94@live.com\"\n}",
+						"params": []
+					},
+					"headersSize": -1,
+					"bodySize": -1,
+					"settingEncodeUrl": true
+				},
+				"response": {
+					"status": 201,
+					"statusText": "Created",
+					"httpVersion": "HTTP/1.1",
+					"cookies": [],
+					"headers": [
+						{
+							"name": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"name": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"name": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"name": "Content-Length",
+							"value": "53"
+						},
+						{
+							"name": "ETag",
+							"value": "W/\"35-Rv3rSSFuH3PLTqmCS93dmzjn0HA\""
+						},
+						{
+							"name": "Date",
+							"value": "Wed, 05 Oct 2022 20:21:59 GMT"
+						},
+						{
+							"name": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"name": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"content": {
+						"size": 53,
+						"mimeType": "application/json; charset=utf-8",
+						"text": "{\"situation\":true,\"msg\":\"User inserted with success\"}"
+					},
+					"redirectURL": "",
+					"headersSize": -1,
+					"bodySize": -1
+				},
+				"cache": {},
+				"timings": {
+					"blocked": -1,
+					"dns": -1,
+					"connect": -1,
+					"send": 0,
+					"wait": 346.507,
+					"receive": 0,
+					"ssl": -1
+				},
+				"comment": "Register User"
+			}
+		]
+	}
+}
