@@ -65,14 +65,7 @@ class UsersControlllers {
     }
   }
 
-  public async teste(req: Request, res: Response) {
-    try {
-    } catch (error) {
-      res.send(error);
-      
-      console.error(error);
-    }
-  }
+
 
   public async listOneForUserUsername(req: Request, res: Response) {
     try {

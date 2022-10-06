@@ -3,7 +3,6 @@ import UsersController from "../controllers/UsersController";
 const routers = Router();
 
 routers.get("/", UsersController.listAll);
-routers.get("/teste", UsersController.teste);
 routers.get("/:id", UsersController.listOneForId);
 routers.get("/username/:userName", UsersController.listOneForUserUsername);
 
