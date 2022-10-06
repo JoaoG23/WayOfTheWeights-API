@@ -141,6 +141,9 @@ Teste, **_Insomnia ou postman_** de sua preferencia.
 
 <h2 id='usar'><b>4- Como usar 👩‍💻</b></h2>
 
+
+<img width='700px' src="./assets/fluxo.png" />
+
 Cada usuário tem um treino.
 Em cada treino tem vários exercícios
 E cada exercício tem a sua carga atual, anteriores, e histórico de performance.

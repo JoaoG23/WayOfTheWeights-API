@@ -1,3 +1,4 @@
+import * as pg from 'pg'
 import { Sequelize } from "sequelize";
 import 'dotenv/config';
 
@@ -10,5 +11,6 @@ export const db = new Sequelize(
   process.env.DB_PASSWORD, {
   dialect: dialect,
   host:process.env.DB_HOST,
-  port: porta
+  port: porta,
+  dialectModule: pg
 });
