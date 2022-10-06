@@ -2,7 +2,7 @@
 
 <h1>WayOftheWeights-API 🏋🏽‍♂️<h1>
 
-<img width='200px' src="./assets/logo-png-name.png" />
+<img width='300px' src="./assets/logo-png-name.png" />
 
 </div>
 
@@ -26,12 +26,12 @@
 
 <h2 id='introdução' color=green ><b>1 - Introdução</b></h2>
 
-<img width="300px" src="https://media.tenor.com/fUUHTDw9pnsAAAAd/gym-fail-weak.gif">
+<img width="450px" src="https://media.tenor.com/fUUHTDw9pnsAAAAd/gym-fail-weak.gif">
 
 API em desenvolvimento ainda, mas sistema tem o intuito de gestionar as quantidade de **pesos** que alcançado na **academia** pelo usuário
 
 <h2 id='desenvolvimento'><b>2- Desenvolvimento e Tecnologias 🥵🧑‍🏭 </b></h2>
-<img width="300px" src="https://media.tenor.com/nq76xNvyoYkAAAAd/construction-lol.gif">
+<img width="450px" src="https://media.tenor.com/nq76xNvyoYkAAAAd/construction-lol.gif">
 
 Primeiramente usei a Biblioteca **JEST** e tive problemas para gerar testes em Typescript por causa das configurações, entretanto usei uma nova biblioteca que me surpreendeu. Com suporte a **Typescript**, **Vitest** é uma biblioteca que já possui nativamente suporta Typescript e é extremamente rápido para realizar teste nele. Com sempre o **Arquiterura MVC**, e pela primeira vez realizei um projeto sem nenhuma lógica no banco de dados, 🤦🏽‍♂️Aff como foi difícil abandonar aquelas procedures, enfim extrair um pouco do **Sequelize**, em conjunto com queries nativas, também pela primeira usei as **Migrations** na minha vida🥳 Poor\*\* que ferramenta incrível🤩.
 
@@ -156,7 +156,7 @@ Basicamente tem 5 Rotas principais
 
 De uma olhada na documentação para melhor entendimento.
 
-<h4><a href='https://wayoftheweights-docs-api.netlify.app'>Clique aqui para acessa a documentacão</a></h4>
+<h3>👉🏽<a href='https://wayoftheweights-docs-api.netlify.app'>Clique aqui para acessa a documentacão</a></h3>
 
 <h2 id='consideraçoesfinais'><b>5 -🥺😭 Considerações finais</b></h2>
 
@@ -167,11 +167,12 @@ Visto isso, acho que hoje para realmente temos um software de qualidade e impres
 🤗🙋‍♂️!
 
 ### Autor ✍🏻
-
 ---
 
- <img style="border-radius:50%;" src="https://avatars.githubusercontent.com/u/80895578?v=4" width="100px;" alt=""/>
- <br />
+
+![avatar](https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/80895578?v=4?v=4&h=100&w=100&fit=cover&mask=circle&maxage=7d
+)
+
  <sub><b>Joao Guilherme</b></sub></h4> <a href="https://github.com/JoaoG23/">🚀</a>
 
 Feito com 🤭 por Joao Guilherme 👋🏽 Entre em contato!
