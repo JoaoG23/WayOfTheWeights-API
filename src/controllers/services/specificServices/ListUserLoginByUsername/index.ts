@@ -4,7 +4,17 @@ class ListUserLoginByUsername {
   public static async execulte(userName: string): Promise<object> {
     try {
       const datas = await db.query(
-        'SELECT * FROM users RIGHT JOIN previlegies_users ON previlegies_users.id = users."idPrevilegies" WHERE users."userName" = ? ',
+        `SELECT 
+        users.id,
+        users.name,
+        users."userName",
+        users.password,
+        users.phonenumber,
+        users.email,
+        users."idPrevilegies",
+        previlegies_users.force
+        FROM users 
+        RIGHT JOIN previlegies_users ON previlegies_users.id = users."idPrevilegies" WHERE users."userName" = ? `,
         {
           replacements: [userName],
           type: QueryTypes.SELECT,

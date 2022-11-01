@@ -55,10 +55,11 @@ class StatisticsControlllers {
 
   public async last3ExercicesUpdated(req: Request, res: Response) {
     try {
-      const { userId } = req.params;
+      const { userId, exerciceId } = req.query;
       const response = await ListDataGeneric.execulte(HistoryUsersModel, {
         where: {
           id_user: userId,
+          id_exercice:exerciceId
         },
         order: [["id", "DESC"]],
         limit: 3,

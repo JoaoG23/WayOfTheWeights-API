@@ -13,7 +13,6 @@ import {
   angela,
   angelaLogin,
   angelaWithId,
-  emailAngela,
   emailAngelaAndNewPassword,
   gabiroba,
   zelanbida,
@@ -751,6 +750,24 @@ describe('Data and Statitics', () => {
 
       expect(showTableHistory.statusCode).toEqual(200);
       expect(showTableHistory.headers);
+    });
+  });
+});
+
+
+describe("List Weights", () => {
+  describe("When send GET in the routers api/weights/", () => {
+
+    it("Should to find all weights of registed and show all", async () => {
+      // Create on new list of users
+      const token = await GenerateToken.execulte({ id: 1, previlegie: 2 });
+
+      const weights = await request(app)
+        .get("/api/weights")
+        .set("authorization-token", token);
+
+        console.log(weights.body);
+      expect(weights.statusCode).toEqual(200);
     });
   });
 });

@@ -20,15 +20,24 @@ class UsersControlllers {
         phonenumber: req.body.phonenumber,
       });
 
+      const emailFound = await ListOneDataService.execulte(UserModel, {
+        email: req.body.email,
+      });
+      const userNameFound = await ListOneDataService.execulte(UserModel, {
+        userName: req.body.userName,
+      });
+
       if (phonenumberFound) {
         return res
           .status(400)
           .json(new MessageReturns(false, "This Phonenumber already exists"));
       }
 
-      const emailFound = await ListOneDataService.execulte(UserModel, {
-        email: req.body.email,
-      });
+      if (userNameFound) {
+        return res
+          .status(400)
+          .json(new MessageReturns(false, "This Username already exists! Try to other"));
+      }
 
       if (emailFound) {
         return res
@@ -132,6 +141,7 @@ class UsersControlllers {
         id: userFound.id,
         name: userFound.name,
       };
+
 
       // insert token in code
       res.header("authorization-token", token);
