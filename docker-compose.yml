@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  backend:
+    build: "./"
+    image: api-way-of-weights-image
+    container_name: api-way-of-weights-container
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "3003:3000"
+    networks:
+      - way-of-weights-network
+networks:
+  way-of-weights-network:
